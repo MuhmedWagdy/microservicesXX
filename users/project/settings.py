@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -100,7 +102,7 @@ DATABASES = {
         'NAME': 'users',
         'USER': 'postgres',
         'PASSWORD': 'postgres',  # Match with the password in docker-compose.yml
-        'HOST': 'usersDB',  # Use the service name defined in docker-compose.yml
+        'HOST': 'userDB',  # Use the service name defined in docker-compose.yml
         'PORT': '5432',
     }
 }
